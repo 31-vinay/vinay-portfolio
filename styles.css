@@ -2,10 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    outline: none;
 }
 
 html {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="%23FF6044"/></svg>') 5 5, pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:active {
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -25,6 +42,9 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
 /* Mouse Cursor Glow Effect */
