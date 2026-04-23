@@ -1,29 +1,37 @@
-// Mouse cursor glow effect
+// Mouse cursor glow effect (desktop only)
 const cursorGlow = document.querySelector('.cursor-glow');
-let mouseX = 0;
-let mouseY = 0;
+const isTouchDevice = () => {
+    return (('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0) ||
+            (navigator.msMaxTouchPoints > 0));
+};
 
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    
-    if (cursorGlow) {
-        cursorGlow.style.left = mouseX + 'px';
-        cursorGlow.style.top = mouseY + 'px';
-    }
-});
+if (!isTouchDevice() && cursorGlow) {
+    let mouseX = 0;
+    let mouseY = 0;
 
-document.addEventListener('mouseenter', () => {
-    if (cursorGlow) {
-        cursorGlow.classList.add('active');
-    }
-});
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        
+        if (cursorGlow) {
+            cursorGlow.style.left = mouseX + 'px';
+            cursorGlow.style.top = mouseY + 'px';
+        }
+    });
 
-document.addEventListener('mouseleave', () => {
-    if (cursorGlow) {
-        cursorGlow.classList.remove('active');
-    }
-});
+    document.addEventListener('mouseenter', () => {
+        if (cursorGlow) {
+            cursorGlow.classList.add('active');
+        }
+    });
+
+    document.addEventListener('mouseleave', () => {
+        if (cursorGlow) {
+            cursorGlow.classList.remove('active');
+        }
+    });
+}
 
 // Optimized content loading using batch operations
 const loadContent = () => {
