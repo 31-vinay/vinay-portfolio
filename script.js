@@ -33,6 +33,22 @@ if (!isTouchDevice() && cursorGlow) {
     });
 }
 
+// Force video to play on mobile
+const video = document.querySelector('.video-background video');
+if (video) {
+    video.play().catch(() => {
+        // Fallback: if autoplay fails, show a static background
+        console.log('Video autoplay failed on mobile');
+    });
+    
+    // Ensure video plays after any user interaction
+    document.addEventListener('click', () => {
+        if (video && video.paused) {
+            video.play().catch(err => console.log('Play failed:', err));
+        }
+    });
+}
+
 // Optimized content loading using batch operations
 const loadContent = () => {
     const tasks = [
