@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Bendale - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background Video -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline loading="lazy" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect fill='%23121313'/%3E%3C/svg%3E">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Mouse Cursor Glow Effect -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-glass">
+                <span class="logo-v">V</span>
+                Vinay Bendale
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-title">Vinay Bendale</h1>
+                <p class="hero-subtitle animate-subtitle">Welcome to My Portfolio</p>
+                <!-- Scrolling Text Animation -->
+                <div class="scrolling-text">
+                    <span class="scroll-item">🚀 Web Development</span>
+                    <span class="scroll-item">🎨 UI/UX Design</span>
+                    <span class="scroll-item">⚡ Problem Solving</span>
+                    <span class="scroll-item">💻 Backend Development</span>
+                </div>
+                <div class="glass-button">Explore My Work</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card glass-morphic">
+                <div class="skeleton-loader" id="about-skeleton">
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                </div>
+                <p class="about-text hidden" id="about-text">
+                    Hi! I'm a passionate developer and creator. I love building things and solving problems.
+                    With expertise in web development, UI/UX design, and creative problem-solving, I bring ideas to life.
+                    I'm constantly learning and pushing the boundaries of what's possible on the web.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card neomorphic">
+                    <div class="skeleton-loader" id="skill-skeleton-1">
+                        <div class="skeleton skeleton-header"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skill-content hidden" id="skill-1">
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, JavaScript, React</p>
+                    </div>
+                </div>
+                <div class="skill-card neomorphic">
+                    <div class="skeleton-loader" id="skill-skeleton-2">
+                        <div class="skeleton skeleton-header"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skill-content hidden" id="skill-2">
+                        <h3>UI/UX Design</h3>
+                        <p>Figma, Design Systems, Prototyping</p>
+                    </div>
+                </div>
+                <div class="skill-card neomorphic">
+                    <div class="skeleton-loader" id="skill-skeleton-3">
+                        <div class="skeleton skeleton-header"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skill-content hidden" id="skill-3">
+                        <h3>Problem Solving</h3>
+                        <p>Analytical thinking, Optimization</p>
+                    </div>
+                </div>
+                <div class="skill-card neomorphic">
+                    <div class="skeleton-loader" id="skill-skeleton-4">
+                        <div class="skeleton skeleton-header"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skill-content hidden" id="skill-4">
+                        <h3>Backend Development</h3>
+                        <p>Node.js, Python, Database Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass-morphic">
+                <div class="skeleton-loader" id="contact-skeleton">
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                </div>
+                <div class="contact-content hidden" id="contact-content">
+                    <p class="contact-email">📧 vinay.bendale1@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/vinaybendale" target="_blank" rel="noopener noreferrer" class="social-btn glass-button">LinkedIn</a>
+                        <a href="https://github.com/31-vinay" target="_blank" rel="noopener noreferrer" class="social-btn glass-button">GitHub</a>
+                        <a href="https://www.instagram.com/_vinay3112_/" target="_blank" rel="noopener noreferrer" class="social-btn glass-button">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-glass">
+        <p>&copy; 2026 Vinay Bendale. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
