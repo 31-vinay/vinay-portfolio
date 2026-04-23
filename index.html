@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="video" href="background-mobile.mp4" type="video/mp4">
     <!-- Vercel Web Analytics -->
     <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
     <!-- Vercel Speed Insights -->
@@ -19,10 +20,13 @@
 <body>
     <!-- Animated Background Video -->
     <div class="video-background">
-        <video autoplay muted loop playsinline poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect fill='%23121313'/%3E%3C/svg%3E">
-            <source src="background.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
+       <video autoplay muted loop playsinline preload="auto">
+         <source src="background-mobile.mp4" media="(max-width: 768px)" type="video/mp4">
+         <source src="background-desktop.mp4" type="video/mp4">
+         <source src="background-mobile.mp4" type="video/mp4; codecs=hevc">
+         <source src="background-mobile.webm" type="video/webm">
+       </video>
+      <div class="video-overlay"></div>
     </div>
 
     <!-- Mouse Cursor Glow Effect -->
