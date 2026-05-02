@@ -421,6 +421,7 @@ body::before {
     backdrop-filter: blur(8px);
     border: 2px solid var(--neon-coral);
     color: var(--neon-coral);
+    text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
@@ -454,6 +455,81 @@ body::before {
     background: rgba(255, 96, 68, 0.3);
     transform: translateY(-2px);
     box-shadow: 0 12px 25px rgba(255, 96, 68, 0.25);
+}
+
+/* ========== PROJECTS PAGE ========== */
+.projects-page {
+    background: linear-gradient(135deg, var(--space-black) 0%, #1f1f20 100%);
+}
+
+.projects-hero {
+    padding: 90px 0 50px;
+    text-align: center;
+}
+
+.projects-subtitle {
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.05rem;
+}
+
+.projects-grid {
+    padding: 20px 0 90px;
+}
+
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    padding: 2rem;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-kicker {
+    color: var(--neon-coral);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    font-family: 'Playfair Display', serif;
+}
+
+.project-card p {
+    color: var(--text-light);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: auto;
+}
+
+.project-tag {
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 96, 68, 0.35);
+    color: var(--neon-coral);
+    font-size: 0.82rem;
+    background: rgba(255, 96, 68, 0.08);
+}
+
+.projects-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes fadeInScale {
@@ -784,6 +860,14 @@ body::before {
     .social-btn {
         width: 100%;
         text-align: center;
+    }
+
+    .projects-hero {
+        padding-top: 60px;
+    }
+
+    .project-card {
+        min-height: auto;
     }
 }
 

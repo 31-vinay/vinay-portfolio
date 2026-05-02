@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay - Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="video" href="background-mobile.mp4" type="video/mp4">
+    <!-- Vercel Web Analytics -->
+    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    <!-- Vercel Speed Insights -->
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+</head>
+<body class="projects-page">
+    <div class="video-background">
+        <video autoplay muted loop playsinline preload="auto">
+            <source src="background-mobile.mp4" media="(max-width: 768px)" type="video/mp4">
+            <source src="background-desktop.mp4" type="video/mp4">
+            <source src="background-mobile.mp4" type="video/mp4; codecs=hevc">
+            <source src="background-mobile.webm" type="video/webm">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-glass">
+                <span class="logo-v">V</span>
+                Vinay Govinda Bendale
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="projects-hero">
+            <div class="container">
+                <h1 class="section-title">Projects</h1>
+                <p class="projects-subtitle">
+                    A curated look at the work I enjoy building — from polished interfaces to practical web experiences.
+                </p>
+                <div class="projects-actions">
+                    <a class="glass-button" href="index.html">Back to Home</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <div class="container">
+                <div class="projects-cards">
+                    <article class="project-card glass-morphic">
+                        <span class="project-kicker">Featured Project 01</span>
+                        <h3>Personal Portfolio</h3>
+                        <p>A cinematic portfolio experience with glassmorphism, animated backgrounds, and responsive layout choices.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-morphic">
+                        <span class="project-kicker">Featured Project 02</span>
+                        <h3>Task Dashboard</h3>
+                        <p>A productivity interface built to organize tasks, surface priorities, and keep daily work easy to scan.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">UI Design</span>
+                            <span class="project-tag">Responsive</span>
+                            <span class="project-tag">Workflow</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-morphic">
+                        <span class="project-kicker">Featured Project 03</span>
+                        <h3>Developer Landing Page</h3>
+                        <p>A polished landing page focused on clear messaging, smooth motion, and strong visual hierarchy.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Branding</span>
+                            <span class="project-tag">Motion</span>
+                            <span class="project-tag">Front End</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-glass">
+        <p>&copy; 2026 Vinay Bendale. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
