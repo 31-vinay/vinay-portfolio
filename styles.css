@@ -255,6 +255,13 @@ h2 {
     color: #e0f7ff;
 }
 
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
 .profile-card h3 {
     margin-bottom: 8px;
 }
@@ -476,12 +483,8 @@ h2 {
     align-items: center;
 }
 
-.verify-badge {
-    border-radius: 999px;
-    padding: 10px 14px;
-    background: rgba(34, 197, 94, 0.14);
-    border: 1px solid rgba(34, 197, 94, 0.45);
-    font-weight: 600;
+.certification-card .btn {
+    white-space: nowrap;
 }
 
 .github-grid {
