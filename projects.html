@@ -3,140 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinay - Projects</title>
+    <title>Featured Projects | Vinay Bendale</title>
+    <meta name="description" content="Featured software projects by Vinay Bendale including MoneyMate, SocioServe, and Rubik's Cube Solver.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" as="video" href="background-mobile.mp4" type="video/mp4">
-    <!-- Vercel Web Analytics -->
-    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
-    <!-- Vercel Speed Insights -->
-    <script>
-        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
-<body class="projects-page">
-    <div class="video-background">
-        <video autoplay muted loop playsinline preload="auto">
-            <source src="background-mobile.mp4" media="(max-width: 768px)" type="video/mp4">
-            <source src="background-desktop.mp4" type="video/mp4">
-            <source src="background-mobile.mp4" type="video/mp4; codecs=hevc">
-            <source src="background-mobile.webm" type="video/webm">
-        </video>
-        <div class="video-overlay"></div>
-    </div>
-
-    <div class="cursor-glow"></div>
-
-    <nav class="navbar">
+<body>
+    <main class="section">
         <div class="container">
-            <div class="logo-glass">
-                <span class="logo-v">V</span>
-                Vinay Govinda Bendale
+            <div class="section-heading reveal show">
+                <p class="eyebrow">Projects</p>
+                <h2>Selected work and engineering outcomes.</h2>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-            </ul>
+
+            <div class="projects-grid">
+                <article class="glass project-card reveal show">
+                    <div class="project-image-wrap"><img src="Website Photos/MoneyMate.png" alt="MoneyMate screenshot placeholder" loading="lazy"></div>
+                    <h3>MoneyMate</h3>
+                    <p>AI-powered personal finance platform with tracking, analytics, and intelligent spending insights.</p>
+                    <div class="project-actions">
+                        <a class="btn btn-secondary" href="https://github.com/31-vinay/MoneyMate" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="btn btn-ghost" href="#">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="glass project-card reveal show">
+                    <div class="project-image-wrap"><img src="Website Photos/SocioServe.png" alt="SocioServe screenshot placeholder" loading="lazy"></div>
+                    <h3>SocioServe</h3>
+                    <p>A social impact platform bridging NGOs and volunteers through secure event workflows.</p>
+                    <div class="project-actions">
+                        <a class="btn btn-secondary" href="https://github.com/31-vinay/SocioServe" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="btn btn-ghost" href="#">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="glass project-card reveal show">
+                    <div class="project-image-wrap project-placeholder"><span>Rubik's Cube Solver</span></div>
+                    <h3>Rubik's Cube Solver</h3>
+                    <p>OpenCV-based scanner and Kociemba-based solver for guided step-by-step cube solving.</p>
+                    <div class="project-actions">
+                        <a class="btn btn-secondary" href="https://github.com/31-vinay" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="btn btn-ghost" href="#">Live Demo</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="hero-actions" style="margin-top:24px;">
+                <a class="btn btn-primary" href="index.html">Back to Portfolio</a>
+            </div>
         </div>
-    </nav>
-
-    <main>
-        <section class="projects-hero">
-            <div class="container">
-                <h1 class="section-title">Projects</h1>
-                <p class="projects-subtitle">
-                    A curated look at the work I enjoy building — from polished interfaces to practical web experiences.
-                </p>
-                <div class="projects-actions">
-                    <a class="glass-button" href="index.html">Back to Home</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects-grid">
-            <div class="container">
-                <div class="projects-cards">
-                    <article class="project-card glass-morphic">
-                        <div class="project-hero-image">
-                            <img src="Website Photos/MoneyMate.png" alt="MoneyMate project preview" loading="lazy">
-                        </div>
-                        <div class="project-header">
-                            <div>
-                                <span class="project-kicker">Project 01</span>
-                                <h3>MoneyMate</h3>
-                            </div>
-                            <a href="https://github.com/31-vinay/MoneyMate" class="project-github" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <p>MoneyMate is a personal finance web app that enables users to monitor expenses, categorize transactions, and get automated email insights to improve budgeting habits.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Flask</span>
-                            <span class="project-tag">Rest API</span>
-                            <span class="project-tag">MongoDB</span>
-                            <span class="project-tag">Email Integration (IMAP)</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card glass-morphic">
-                        <div class="project-hero-image">
-                          <img src="Website Photos/SocioServe.png" alt="SocioServe project preview" loading="lazy">
-                        </div>
-                        <div class="project-header">
-                            <div>
-                                <span class="project-kicker">Project 02</span>
-                                <h3>SocioServe</h3>
-                            </div>
-                            <a href="https://github.com/31-vinay/SocioServe" class="project-github" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <p>SocioServe is a web-based application that streamlines volunteer engagement by providing features for event discovery, registration, and coordination between users and organizations.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">H2 Server Database</span>
-                            <span class="project-tag">User System</span>
-                            <span class="project-tag">Responsive</span>
-                            <span class="project-tag">Event Management</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card glass-morphic">
-                        <div class="project-hero-image">
-                            <img src="Website Photos/Portfolio.png" alt="Personal Portfolio project preview" loading="lazy">
-                        </div>
-                        <div class="project-header">
-                            <div>
-                                <span class="project-kicker">Project 03</span>
-                                <h3>Personal Portfolio</h3>
-                            </div>
-                            <a href="https://github.com/31-vinay/vinay-portfolio" class="project-github" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <p>A responsive portfolio website built to present my technical projects, skills, and achievements, with a focus on clean UI and seamless user experience.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Responsive</span>
-                            <span class="project-tag">Animations</span>
-                            <span class="project-tag">UI/UX</span>
-                            <span class="project-tag">Glassmorphism</span>
-                            <span class="project-tag">HTML/CSS3</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="footer-glass">
-        <p>&copy; 2026 Vinay Bendale. All rights reserved.</p>
+    <footer class="site-footer">
+        <p>© 2026 Vinay Bendale</p>
+        <p>Made with ❤️ using React</p>
     </footer>
 
     <script src="script.js"></script>
