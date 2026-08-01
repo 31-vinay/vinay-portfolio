@@ -556,8 +556,9 @@ h2 {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+    justify-content: center;
+    gap: 12px;
 }
 
 .contact-grid a {
@@ -565,6 +566,9 @@ h2 {
     border-radius: 12px;
     border: 1px solid rgba(56, 189, 248, 0.36);
     background: rgba(56, 189, 248, 0.12);
+    text-align: center;
+    overflow-wrap: anywhere;
+    line-height: 1.35;
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
@@ -621,7 +625,7 @@ h2 {
     }
 
     .contact-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(220px, 260px));
     }
 }
 
@@ -652,8 +656,11 @@ h2 {
     .skills-grid,
     .projects-grid,
     .github-grid,
-    .stats-grid,
-    .contact-grid {
+    .stats-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: minmax(220px, 320px);
     }
 }
